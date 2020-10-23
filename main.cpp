@@ -16,9 +16,11 @@ int main(){
     arreglo.insertar_final("leon");
     arreglo.insertar_final("tigre");
     arreglo.insertar_final("conejo");
-    arreglo.insertar_inicio("dragon");
-    arreglo.insertar_inicio("pelicano");
+    arreglo.insertar_inicio("rana");
+    arreglo.insertar_inicio("luciernaga");
 
+
+    cout<<endl;
     for (size_t i = 0; i < arreglo.size(); i++)
     {
         cout<<arreglo[i]<<" ";
