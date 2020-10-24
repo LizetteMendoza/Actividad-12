@@ -1,17 +1,17 @@
 #include"arreglo.h"
 
-Arreglo::Arreglo(){
+ArregloDinamico::ArregloDinamico(){
     arreglo = new string[MAX];
     cont = 0;
     tam = MAX;
 }
 
-Arreglo::~Arreglo(){
+ArregloDinamico::~ArregloDinamico(){
 
     delete[] arreglo;
 }
 
-void Arreglo::insertar_final(string v){
+void ArregloDinamico::insertar_final(string v){
     
     if(cont == tam){
         expandir();
@@ -21,7 +21,7 @@ void Arreglo::insertar_final(string v){
     cont ++;
 }
 
-void Arreglo::insertar_inicio(string v){
+void ArregloDinamico::insertar_inicio(string v){
      if(cont == tam){
         expandir();
     }
@@ -34,7 +34,7 @@ void Arreglo::insertar_inicio(string v){
     cont ++;
 }
 
-void Arreglo::expandir(){
+void ArregloDinamico::expandir(){
     string *nuevo = new string [tam+MAX];
 
     for (size_t i = 0; i < cont; i++)
@@ -46,7 +46,7 @@ void Arreglo::expandir(){
     tam = tam + MAX;
 }
 
-size_t Arreglo::size(){
+size_t ArregloDinamico::size(){
 
     return cont;
 }

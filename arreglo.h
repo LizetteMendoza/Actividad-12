@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Arreglo{
+class ArregloDinamico{
  
  private:
     string *arreglo;
@@ -15,8 +15,8 @@ class Arreglo{
     void expandir();
 
  public:
-    Arreglo();
-    ~Arreglo();
+    ArregloDinamico();
+    ~ArregloDinamico();
     void insertar_inicio(string v);
     void insertar_final(string v);
     size_t size();

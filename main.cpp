@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 
-    Arreglo arreglo;
+    ArregloDinamico arreglo;
 
     arreglo.insertar_final("perro");
     arreglo.insertar_final("gato");
